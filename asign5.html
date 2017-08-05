@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> javascript </title>
+<meta charset="UTF-8">
+
+</head>
+<body>
+<script>
+var employee = (function () {
+    function employee(name, salary, skills) {
+        this.name = name;
+        this.salary = salary;
+        this.skills = skills;
+        this.name = name;
+        this.salary = salary;
+        this.skills = skills;
+    }
+    employee.prototype.GetDetails = function () {
+        return " employee name is " + this.name + " " + "and  " + " " + "salary is " + this.salary + " " + "and  " + " " + "skills is " + this.skills;
+    };
+    employee.prototype.changeSalary = function () {
+        return " employee name is " + this.name + " " + "and  " + " " + "salary is " + this.salary + " " + "and  " + " " + "skills is " + this.skills;
+    };
+    return employee;
+}());
+var s1 = new employee('sreevani', 2500, 'javascript');
+console.log(s1.GetDetails());
+alert(s1.GetDetails());
+document.write("employe details" + s1.GetDetails());
+var s2 = new employee('sreevani', 35000, 'javascript');
+console.log(s2.changeSalary());
+alert("change salary is " + s2.changeSalary());
+document.write("</br> " + "employe details with chnage salary" + s2.changeSalary());
+
+
+</script>
+</body>
+</html>
